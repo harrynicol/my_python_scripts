@@ -1,0 +1,18 @@
+{
+  "name": "Python Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["ms-python.python", 
+                    "ms-toolsai.jupyter", 
+                    "ms-toolsai.jupyter-keymap", 
+                    "ms-toolsai.jupyter-cell-templates"]
+    }
+  },
+  "forwardPorts": [],
+  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+  "remoteUser": "root"
+}
